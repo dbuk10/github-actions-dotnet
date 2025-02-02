@@ -1,0 +1,14 @@
+name: Run every hour
+
+on:
+  schedule:
+    - cron: "20 * * * *"
+
+jobs:
+  cron:
+    name: Every hour
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello world
+        run: echo "Hello World!"
